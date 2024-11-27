@@ -1,0 +1,33 @@
+/* Right Sidebar */
+.right-sidebar {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 25%; /* Adjust width of the right sidebar */
+    position: fixed;  /* Keeps the right sidebar fixed when scrolling */
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;  /* Full height of the screen */
+    ;
+}
+
+.right-sidebar .challenges-box,
+.right-sidebar .messages-box {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Expands the boxes to the full sidebar width */
+}
+
+.right-sidebar .challenges-box h3,
+.right-sidebar .messages-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    overflow-wrap:break-word;
+    padding: 10px;
+    background-color: #f4f4f4; /* Optional: Adding background to h3 for better visibility */
+}

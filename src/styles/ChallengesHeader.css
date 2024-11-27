@@ -1,0 +1,18 @@
+.challenges-header {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+}
+
+.challenges-header h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.challenges-header p {
+    font-size: 1rem;
+    color: #666;
+}

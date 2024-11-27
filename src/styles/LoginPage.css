@@ -1,0 +1,92 @@
+/* LoginPage.css */
+
+/* Main container */
+.LoginPage-container {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Left section styling */
+.left-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  background-color: #f7f7f7;
+  text-align: left;
+}
+
+.left-section h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+.subtext {
+  font-size: 18px;
+  color: #777;
+  margin-top: 10px;
+}
+
+/* Login form section */
+.login-section {
+  max-width: 400px;
+  margin-top: 30px;
+}
+
+.login-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Login button */
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Right section styling */
+.right-section {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+}
+
+.right-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

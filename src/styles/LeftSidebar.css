@@ -1,0 +1,34 @@
+.left-sidebar {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 25%; /* Adjust width of the left sidebar */
+    max-width: 100%;  /* Ensures the sidebar doesn’t overflow */
+    padding-right: 20px;  /* Optional: Add padding to the right for better spacing */
+    position: fixed;  /* Makes sure the left sidebar stays fixed when scrolling */
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;  /* Full height of the screen */
+
+}
+
+.left-sidebar .events-box,
+.left-sidebar .groups-box {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Expands the boxes to the full sidebar width */
+    overflow-wrap:break-word;
+}
+
+.left-sidebar .events-box h3,
+.left-sidebar .groups-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f4f4f4; /* Optional: Adding background to h3 for better visibility */
+}

@@ -1,0 +1,142 @@
+/* Main container for the page */
+.challenges-page {
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(205, 92, 92, 1);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+/* Header section */
+.challenges-header {
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.challenges-header h1 {
+    font-size: 2rem;
+}
+
+/* Container for all sections to allow for horizontal layout */
+.sections-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* Space between the sections */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* The left side for Progress section */
+.challenges-progress-section {
+    flex: 1;  /* Makes this section take up 1 part of the available space */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%; /* Ensure it takes the full width of the left side */
+    max-width: 400px; /* Limit max-width for the progress section */
+}
+
+/* Styling for individual progress details (Challenges Completed, Streaks, Badges) */
+.progress-details {
+    display: flex;
+    flex-direction: column; /* Keeping as a column */
+    padding: 20px;
+}
+
+.challenges-completed, .challenge-streaks, .badges-earned {
+    background-color: rgb(211, 135, 135);
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Current Challenges Section (aligned to the right of progress section) */
+.current-challenges-section {
+    flex: 2; /* Takes more space than the progress section */
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-height: 500px; /* Limit max height of the current challenges section */
+    overflow-y: auto; /* Allow scrolling if the content exceeds the max height */
+}
+
+/* Add New Challenge Section now inside Current Challenges */
+.add-new-challenge-section {
+    margin-top: 20px;
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.add-new-challenge button {
+    background-color: #8e44ad;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+.add-new-challenge button:hover {
+    background-color: #7d3c8c;
+}
+
+/* Featured Progress Section */
+.featured-progress-section {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column; /* Makes content stack vertically */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Peer Shoutouts Section */
+.peer-shoutouts-section {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column; /* Stack shoutouts vertically */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the shoutout list */
+.shoutouts-list .shoutout {
+    background: #f0f0f0;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    width: 100%;  /* Ensures shoutouts stretch the width */
+    max-width: 500px; /* Limit max width for shoutouts */
+    text-align: center; /* Center text inside shoutout */
+}

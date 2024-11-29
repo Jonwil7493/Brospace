@@ -11,6 +11,7 @@
     top: 0;
     bottom: 0;
     height: 100%;  /* Full height of the screen */
+    border-radius: 10px;
 
 }
 
@@ -30,5 +31,6 @@
     font-size: 18px;
     margin-bottom: 10px;
     padding: 10px;
-    background-color: #f4f4f4; /* Optional: Adding background to h3 for better visibility */
+    background-color: rgba(205, 92, 92, 1); /* Optional: Adding background to h3 for better visibility */
+    border-radius: 10px;
 }

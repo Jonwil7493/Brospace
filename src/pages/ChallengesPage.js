@@ -43,15 +43,34 @@ const ChallengesPage = () => {
 
                     {/* Add New Challenge Section now inside Current Challenges */}
                     <div className="add-new-challenge-section">
-                        <h3>Add New Challenge</h3>
-                        <button className="add-new-challenge">Add New Challenge</button>
+                        <button>Add New Challenge</button>
+                    </div>
+                </section>
+
+                {/* Suggested Challenges section */}
+                <section className="suggested-challenges-section">
+                    <h2>Suggested Challenges</h2>
+                    <div className="suggested-challenges">
+                        <p>Start a daily meditation</p>
+                        <button>Join Challenge</button>
+                        </div>
+                    <div className="suggested-challenges">
+                        <p>Complete 30 push-ups every day for 30 days!</p>
+                        <button>Join Challenge</button>
+                    </div>
+                    <div className="suggested-challenges">
+                        <p>Read a book every day for 30 days</p>
+                        <button>Join Challenge</button>
                     </div>
                 </section>
             </div>
 
+            {/*member spotlight and shoutouts flex container */}
+            <div className="spotlight-shoutouts-container">
+                {/* Member Spotlight Section */}
             {/* Featured Progress Section */}
             <section className="featured-progress-section">
-                <h2>Featured Progress</h2>
+                <h2>Member spotlight</h2>
                 <div className="spotlight">
                     <p>Member spotlight: </p>
                     <p>"Completed # of challenges this week"</p>
@@ -70,6 +89,7 @@ const ChallengesPage = () => {
                     </div>
                 </div>
             </section>
+            </div>
         </div>
     );
 };

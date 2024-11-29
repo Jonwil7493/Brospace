@@ -5,6 +5,7 @@ import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignUpPage';
 import Dashboard from './pages/Dashboard';
 import ChallengesPage from './pages/ChallengesPage';
+import InterestGroupsPage from './pages/InterestGroupsPage';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
           <Route path='/signup' element={<SignupPage />} />
           <Route path='/dashboard' element={<Dashboard />} />
           <Route path='/challenges' element={<ChallengesPage />} />
+          <Route path='/interestgroups' element={<InterestGroupsPage />} />
         </Routes>
         <Footer />
       </div>

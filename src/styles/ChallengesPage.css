@@ -15,7 +15,7 @@
 .challenges-header {
     margin-bottom: 30px;
     width: 100%;
-    max-width: 1200px;
+    max-width: 750px;
     text-align: center;
 }
 
@@ -74,30 +74,63 @@
     width: 100%;
     max-height: 500px; /* Limit max height of the current challenges section */
     overflow-y: auto; /* Allow scrolling if the content exceeds the max height */
+    
+}
+
+.current-challenges-section h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.current-challenges-section ul {
+    background-color:  rgb(211, 135, 135);
+    border-radius: 10px;
+    font-size: 15px;
+    height: 100%;
+    max-height: 250px;
+    padding-top: 10px;
+}
+
+.current-challenges-section li {
+    padding-top: 10px;
 }
 
 /* Add New Challenge Section now inside Current Challenges */
 .add-new-challenge-section {
     margin-top: 20px;
-    background-color: #f5f5f5;
+    background-color:  rgb(211, 135, 135);
     padding: 15px;
     border-radius: 8px;
+    max-width: 300px;
+    justify-content: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.add-new-challenge button {
-    background-color: #8e44ad;
+.add-new-challenge-section button {
+    background-color: rgba(205, 92, 92, 1); /* Match the Suggested Challenges button */
     color: white;
     border: none;
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
-    width: 100%;
-    max-width: 300px;
-    margin-top: 20px;
+    width: 100%; /* Ensure full width */
+    max-width: 150px; /* Optional: Limit maximum width */
 }
 
-.add-new-challenge button:hover {
-    background-color: #7d3c8c;
+.add-new-challenge-section button:hover {
+    background-color: rgb(197, 52, 52); /* Match hover effect of Suggested Challenges button */
+}
+
+
+.spotlight-shoutouts-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
 }
 
 /* Featured Progress Section */
@@ -113,6 +146,11 @@
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.spotlight {
+    background-color: #f0f0f0;
+    border-radius: 10px;
 }
 
 /* Peer Shoutouts Section */
@@ -139,4 +177,34 @@
     width: 100%;  /* Ensures shoutouts stretch the width */
     max-width: 500px; /* Limit max width for shoutouts */
     text-align: center; /* Center text inside shoutout */
+}
+
+.suggested-challenges-section {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
+
+.suggested-challenges{
+    background-color: rgb(211, 135, 135);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.suggested-challenges button {
+    background-color: rgba(205, 92, 92,1);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.suggested-challenges button:hover {
+    background-color: rgb(197, 52, 52);
 }

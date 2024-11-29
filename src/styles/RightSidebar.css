@@ -29,5 +29,6 @@
     margin-bottom: 10px;
     overflow-wrap:break-word;
     padding: 10px;
-    background-color: #f4f4f4; /* Optional: Adding background to h3 for better visibility */
+    background-color: rgba(205, 92, 92, 1);
+    border-radius: 10px;
 }

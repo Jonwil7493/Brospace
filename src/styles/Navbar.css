@@ -33,6 +33,6 @@
 }
 
 .navbar .navbar-nav .nav-link:hover {
-  background-color: #007bff; /* Hover effect for links */
+  background-color: rgb(197, 52, 52); /* Hover effect for links */
   color: white; /* Keep text white on hover */
 }

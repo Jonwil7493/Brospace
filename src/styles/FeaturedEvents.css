@@ -1,0 +1,18 @@
+.featured-events {
+    margin-bottom: 40px;
+  }
+  
+  .featured-events h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgba(205, 92, 92, 1);
+  }
+  
+  .featured-events-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  

@@ -1,0 +1,179 @@
+/* General styling for the messaging page */
+.messaging-page {
+    background-color:  rgba(205, 92, 92, 1);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px; /* Adds space for a fixed navbar */
+  }
+  
+  /* Container holding the sidebar and message view */
+  .messaging-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    gap: 20px;
+  }
+  
+  /* Sidebar for conversations */
+  .conversations-sidebar {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 300px;
+  }
+  
+  .conversations-sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .conversation-list {
+    max-height: 500px;
+    overflow-y: auto;
+  }
+  
+  .conversation-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+  }
+  
+  .conversation-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .active {
+    background-color: #e0e0e0;
+  }
+  
+  .conversation-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .last-message {
+    font-size: 0.85rem;
+    color: #666;
+  }
+  
+  .unread-count {
+    background-color: #ff0000;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 0.85rem;
+  }
+  
+  /* Message view section */
+  .message-view {
+    flex: 2;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  .conversation-header h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .messages {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+  }
+  
+  .message-bubble {
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    max-width: 80%;
+  }
+  
+  .message-bubble.received {
+    background-color: #f1f1f1;
+    align-self: flex-start;
+  }
+  
+  .message-bubble.sent {
+    background-color: #0084ff;
+    color: white;
+    align-self: flex-end;
+  }
+  
+  /* Input and send button section */
+  .compose-message {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    resize: vertical;
+  }
+  
+  button {
+    background-color: #0084ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end;
+  }
+  
+  button:hover {
+    background-color: #006bb3;
+  }
+  
+  /* Add styles for the "New Chat" button */
+.new-chat-btn {
+    background-color: rgba(205, 92, 92, 1); /* Matches the color schema */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .new-chat-btn:hover {
+    background-color: rgb(197, 52, 52);
+  }
+  
+  .message-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  

@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/GroupItem.css';
 
 const GroupItem = ({ group, userRole }) => {
     return (

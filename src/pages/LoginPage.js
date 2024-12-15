@@ -1,38 +1,36 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';  // Use `useNavigate` instead of `useHistory`
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // Use `useNavigate` instead of `useHistory`
 import '../styles/LoginPage.css';
+import axios from 'axios';
 
 const LoginPage = () => {
-    const navigate = useNavigate(); // Use `useNavigate()` to get the navigate function
+    const navigate = useNavigate(); // Get the navigate function from react-router-dom
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    // Dummy login function
-    const dummyLogin = () => {
-        const dummyUser = {
-            username: 'dummyUser@email.com',
-            password: '1234',
-        };
+    // Handle login using axios to call backend API
+    const handleLogin = async (email, password) => {
+        try {
+            const response = await axios.post('http://localhost:8000/api/login', {
+                username: email, // Ensure you use the correct key (e.g., username instead of email if needed)
+                password,
+            });
+            console.log('Login successful:', response.data);
 
-        console.log('Logged in with dummy credentials:', dummyUser);
-
-        // Redirect to dashboard
-        navigate('/dashboard'); // Use `navigate` to go to the dashboard
+            // Redirect to dashboard upon successful login
+            navigate('/dashboard'); // Change '/dashboard' to the route you want to redirect to
+        } catch (error) {
+            console.error('Login failed:', error.response ? error.response.data : error.message);
+            // Optionally handle error by showing a message to the user
+        }
     };
 
     // Handle form submission
     const handleSubmit = (e) => {
-        e.preventDefault(); // Prevent the default form submission
-        // You could add your login logic here
+        e.preventDefault(); // Prevent form from reloading the page
         console.log('Logging in with:', email, password);
-        dummyLogin(); // Call dummy login for now
+        handleLogin(email, password); // Call the real login function here
     };
-
-    // Run `dummyLogin` on component mount if needed (for testing purposes)
-    useEffect(() => {
-        // You can keep this if you want dummy login on mount
-        // dummyLogin();
-    }, []); // Empty dependency array ensures it runs only once
 
     return (
         <div className='LoginPage-container'>
@@ -41,7 +39,7 @@ const LoginPage = () => {
                 <p className='subtext'>Connect Grow Thrive</p>
                 <div className='login-section'>
                     <h2>Login</h2>
-                    <form onSubmit={handleSubmit}> {/* Form submits on click */}
+                    <form onSubmit={handleSubmit}>
                         <div className='form-group'>
                             <label htmlFor='email'>Email:</label>
                             <input 

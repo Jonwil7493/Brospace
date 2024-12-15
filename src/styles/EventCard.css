@@ -1,0 +1,30 @@
+.event-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .event-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .event-date, .event-location, .event-description {
+    margin-bottom: 8px;
+  }
+  
+  .rsvp-button {
+    background-color: rgba(205, 92, 92, 1);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .rsvp-button:hover {
+    background-color: rgb(197, 52, 52);
+  }
+  

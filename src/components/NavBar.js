@@ -24,7 +24,7 @@ function Navbar() {
                         <Link className='nav-link' to='/PersonalMessages'>Personal Messages</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link className='nav-link' to='/ProfilePage'>My Brofile</Link>
+                        <Link className='nav-link' to='/BrofilePage'>My Brofile</Link>
                     </li>
                 </ul>
             </div>

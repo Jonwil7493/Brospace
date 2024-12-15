@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // Use `useNavigate` instead of `useHistory`
 import '../styles/LoginPage.css';
 import axios from 'axios';
-
+// This is the login page
 const LoginPage = () => {
     const navigate = useNavigate(); // Get the navigate function from react-router-dom
     const [email, setEmail] = useState('');

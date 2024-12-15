@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../styles/SignUpPage.css';
 import axios from 'axios';
-
+//This is the sign up page
 function SignupPage() {
   const [formData, setFormData] = useState({
     name: '',
